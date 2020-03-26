@@ -1,0 +1,24 @@
+1.HTML5
+2.CSS3
+3.Bootstrap-framework of css
+4.Firebase-Hosting
+5.Linux Certification-cisco
+6.GIT
+7.JavaScript
+8.ES6
+9.ReactJS / AngularJS
+10.Redux-centriliz your code
+11.ReactNative
+12.MongoDB-jsonbase
+13.ExpressJS / NodeJS
+14.Docker
+15.Kubernetes
+-----------------------------
+HTML human skeletans hyper text markup language
+Books- HTML and CSS by Jon Duckett
+Assignment & Assisment & online paper
+12 hr application challenge-saylani hacakthon  final exam
+sayline certificate 
+skill development certification 
+london city and girl certificatian
+---------------------------------------
