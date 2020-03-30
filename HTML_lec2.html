@@ -28,7 +28,198 @@
     <p>Home-HTML_lec2</p>
 
     <h2>HERARICY</h2>
+    <p>sibling are those files which exist on same level <br>
+    for that in<b> href</b> we use direct name <b>=sibling.html</b></p>
+    <p>child are those files that exist one folder deep <br>
+    for example on your study table you have your physic book<br>
+and inside drawer you have pen,pensile<br>
+so to get pen,pensil you need to go 1step down inside drawer<br>
+for that you will do <b>href = drawer/pen</b> in this u selected 'drawer' then you open it with  '/' and then u selected 'pen'</p>
+<p>Grand child let's say you have wallet,pen,pencile in same drawer and your book is on top desk so to access money from wallet you need<br>
+to go 2 level down first open 'drawer' with '/' then open 'wallet' with '/' this then select 100rupees.html</p>
+<b>href = drawer/wallet/100rupees.html</b>
+<p>up untill now we were going inside let's go out side. let say we are in room and we have to go to neighbour house and inside neighbout house we have ball.html<br>
+first we will go-out untill our house become sibling to neighbour house and this happen at street so we have to goto street<br>
+we have to go out from room then from drawing room and then from main door to reach on street folde<br> to move out one step we do '../'
+<br>so we are out of room and again we will do ../ to move out of drawing room and then<br>
+we move out of main door '../' and reach to street folder<br>
+<b>href = ../../../ now we go inside and inside we will gointo neighbout so ../../../neighbourdoor then get ball ../../../neighbout/ball.html</b></p>
     <p>Parent</p>
-    
+
+<h2><hr>EMAIL LINK in <b>anchor tag</b></h2>
+<p>in href=" " -----><b> " mailto:taimoor722@gmail.com "</b> </p>
+<a href="mailto:taimoor722@gmail.com?subject=Corona-attack&cc=cc@gmail.com">Taimoor email</a><br>
+<a href="mailto:taimoor722@gmail.com?subject=clean-hands&cc=taimoor.arif02@yahoo.com">another message</a><br>
+<a href="mailto:taimoor722@gmail.com,taimoor.arif02@yahoo.com?subject=total%20deaths&cc=goverment@.pk,punjab@.pk,&body=total%20death%0A1000">message</a>
+<br><a href="https://stackoverflow.com/a/18009279/12004786" target="_blank">How to auto email with subject | body | cc | and  | bcc</a>
+
+<h2><hr>SAME PAGE  LINKING </h2>
+<ol id='list-all'>
+    <li ><a href='#l1'>History</a>
+        <ol>
+            <li ><a href="#l1.1">Etymology</a></li>
+            <li><a href="#l1.2">Synopsis of discoveries</a></li>
+       </ol>
+    </li>
+        
+    <li ><a href="#l2">Definitions of mathematics</a>
+        <ol>
+            <li ><a href="#l2.1">Mathematics as science</a></li>
+        </ol>
+    </li>
+
+
+    <li ><a href="#l3">Inspiration, pure and applied mathematics, and aesthetics</a></li>
+    <li ><a href="#l4">Notation, language, and rigor</a></li>
+
+    <li><a href="#l5">Fields of mathematics</a>
+        <ol>
+            <li ><a href="#l5.1">Foundations and philosophy</a></li>
+            <li ><a href="#l5.2">Pure mathematics</a></li>
+            <li ><a href="#l5.3">Applied mathematics</a></li>
+        </ol>
+    </li>
+
+
+
+    <li ><a href='#l6'>Mathematical awards</a></li>
+    <li ><a href="#l7">See also</a></li>
+    <li ><a href="#l8">Notes</a></li>
+    <li ><a href="#l9">References</a></li>
+    <li ><a href="#l10">Bibliography</a></li>
+    <li ><a href="#l11">Further reading</a></li>
+</ol>
+
+
+<h4 id="l1">History</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+    <h6 id='l1.1'>Etymology</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+    <h6 id='l1.2'>Synopsis of discoveries</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+<h4 id='l2'>Definitions of mathematics</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+
+    <h6 id='l2.1'>Mathematics as science</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l3'>Inspiration, pure and applied mathematics, and aesthetics</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l4'>Notation, language, and rigor</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l5'>Fields of mathematics</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+
+    <h6 id='l5.1'>Foundations and philosophy</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+
+    <h6 id='l5.2'>Pure mathematics</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+
+    <h6 id='l5.3'>Applied mathematics</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+    <a href="#list-all">list</a>
+
+<h4 id='l6'>Mathematical awards</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l7'>See also</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l8'>Notes</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l9'>References</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id='l10'>Bibliography</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h4 id=l11>Further reading</h4>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis id maiores impedit dolorem amet natus hic necessitatibus nihil inventore incidunt vel, eius enim atque temporibus praesentium iure aspernatur nam harum!</p>
+<a href="#list-all">list</a>
+
+<h1><hr>WIKI-LINKINGD</h1>
+<ol id='list-all'>
+    <li ><a href='https://en.wikipedia.org/wiki/Mathematics#History'>History</a>
+        <ol>
+            <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Etymology">Etymology</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Mathematics#Synopsis of discoveries#Synopsis_of_discoveries">Synopsis of discoveries</a></li>
+       </ol>
+    </li>
+        
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Definitions of mathematics#Definitions_of_mathematics">Definitions of mathematics</a>
+        <ol>
+            <li ><a href="https://en.wikipedia.org/wiki/Mathematics#>Mathematics as science #Mathematics_as_science">Mathematics as science</a></li>
+        </ol>
+    </li>
+
+
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Inspiration,_pure_and_applied_mathematics,_and_aesthetics">Inspiration, pure and applied mathematics, and aesthetics</a></li>
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Notation,_language,_and_rigor">Notation, language, and rigor</a></li>
+
+    <li><a href="https://en.wikipedia.org/wiki/Mathematics#Fields_of_mathematics">Fields of mathematics</a>
+        <ol>
+            <li ><a href="https://en.wikipedia.org/wiki/Mathematics#oundations_and_philosophy">Foundations and philosophy</a></li>
+            <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Pure_mathemaitics">Pure mathematics</a></li>
+            <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Applied_mathematics">Applied mathematics</a></li>
+        </ol>
+    </li>
+
+
+
+    <li ><a href='https://en.wikipedia.org/wiki/Mathematics#Mathematical_awards'>Mathematical awards</a></li>
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics#See_also">See also</a></li>
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics#Notes">Notes</a></li>
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics #References">References</a></li>
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics #Bibliography">Bibliography</a></li>
+    <li ><a href="https://en.wikipedia.org/wiki/Mathematics #Further_reading">Further reading</a></li>
+</ol>
+<h1 title="Taimoor is very good boy&#010;He like choclate ice cream&#010;put now he don't eat&#010;Now he eat health natural food">Taimoor</h1>
+<h1><hr>IMAGE :chapter # 5</h1>
+<ul>
+    <li>How to add images to pages</li>
+    <li>Choosing the right format</li>
+    <li>Optimizing images for the web</li>
+
+    <p>u will learn 
+        <ul>
+            <li>Include an image in your web pages using HTML</li>
+            <li>Pick which image format to use</li>
+            <li>Show an image at the right size</li>
+            <li>Optimize an image for use on the web to make pages load faster</li>
+        </ul>
+    </p>
+</ul>
+
+<img src="family/images/manback.jpg"   alt="move on to new day" title="move on with your life &#010;Past is past " height="500" width="400" >
+
+<h1 style="font-weight:normal ;text-align: center;"><hr >HTML FIGURE <b>CAPTION</b></h1>
+<figure  style="text-align: center;">
+    <img  src="family/images/redtree.jpg"  alt="RED TREE" title="Day OF JUGMENT">
+    <figcaption>IT REMIND ME OF A DAY OF JUGMENT <br >WHEN SKY WILL BE RED</figcaption>
+</figure>
 </body>
+
+<img
+srcset="family/images/police.jpg 700w,
+family/images/bike.jpg 800w, "
+sizes="(max-width: 600px) 800px,700px"
+
+src="family/images/police.jpg"
+>
+
+
 </html>
+
