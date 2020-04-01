@@ -233,28 +233,226 @@ we move out of main door '../' and reach to street folder<br>
         column or a row. It can take the<br>
         values: row to indicate a heading<br>
         for a row or col to indicate a<br>
+        
         heading for a column.</p>
-<table>
-    <tr>        <th> </th>                                      <th scope="col">Cases</th>          <th scope="col">Deaths</th>         </tr>
-    <tr>        <th scope="row">United States of America</th>           <td>122653</td>                       <td></td>                 </tr>
-    <tr>        <th scope="row">Italy</th>                                  <td>97689</td>                       <td></td>              </tr>
-    <tr>        <th scope="row">China</th>                                           <td>82455</td>               <td></td>               </tr>
-    <tr>        <th scope="row">Spain</th>                                           <td>78797</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">Germany</th>                                           <td>57298</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">Iran</th>                                           <td>41495</td>                     <td></td>               </tr>
-    <tr>        <th scope="row">France</th>                                           <td>39642</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">The United Kingdom</th>                               <td>19526</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">Switzerland</th>                                      <td>14274</td>                  <td></td>               </tr>
-    <tr>        <th scope="row">Netherlands</th>                                       <td>10866</td>                  <td></td>               </tr>
-    <tr>        <th scope="row">Belgium</th>                                           <td>10836</td>                  <td></td>               </tr>
-    <tr>        <th scope="row">Republic of Korea</th>                                 <td>9661</td>                  <td></td>               </tr>
-    <tr>        <th scope="row">Turkey </th>                                           <td>9271</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">Austria</th>                                           <td>8813</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">Portugal</th>                                           <td>5962</td>                 <td></td>               </tr>
-    <tr>        <th scope="row">Canada</th>                                           <td>5655</td>                    <td></td>               </tr>
-    <tr>        <th scope="row">Israel</th>                                           <td>4247</td>                    <td></td>               </tr>
-       
-</table>
+    <p>&lt;<b>th scope='row'</b>&gt;&nbsp;&nbsp;&lt;<b>th scope="col"</b>&gt;&nbsp;&nbsp;&lt;<b>th scope="col"</b>&gt;&nbsp;&nbsp;&lt;<b>th scope="col"</b>&gt;<br>
+        &lt;<b>th scope='row'</b>&gt;<br>
+        &lt;<b>th scope='row'</b>&gt;<br>
+        &lt;<b>th scope='row'</b>&gt;<br>
+        &lt;<b>th scope='row'</b>&gt;<br>
+        &lt;<b>th scope='row'</b>&gt;<br>
+    </p>
+
+    <h3>Spanning Columns</h3>
+    <p>sometime we want our cell to expand to 2 columns <br>means our cell is now wider<br>
+        so we use attribute <b>colspan="2"</b><br>
+        with <b>th</b> or <b>td</b> <br>
+        &lt;<b>td colspan='2'</b>&gt;<br>
+
+        <table border="30">
+            <tr>
+                <th scope="col" colspan="4">Working hr</th>
+            </tr>
+
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"> 9pm</th>
+                <th scope="col">10pm</th>
+                <th scope="col">11pm</th>
+            </tr>
+            <tr>
+                <th scope="row">Ali</th>
+                <td colspan="3">Y</td>
+
+            </tr>
+            <tr>
+                <th scope="row">Abid</th>
+                <td >N</td>
+                <td>N</td>
+                <td>Y</td>    
+            </tr>
+            <tr>
+                <th scope="row">zubar</th>
+                <td colspan="2">Y</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <th scop="row">fasal</th>
+                <td>N</td>
+                <td colspan="2">Y</td>
+            </tr>
+        </table>
+
+        <h2>Spanning Rows</h2>
+        <p>for row spaning we use attribut<b>rowspan="2"</b> in &lt;td&gt;<br>
+        <b>&lt;td rowspan="3"&gt;</b><br>so when rowspan 3 is used then  next 2 coming rows will also contain empty cell at same position </p>
+
+        <table border="1">
+            <tr>
+                <th colspan="8">task manage schedule</th>
+            </tr>
+            <tr >
+                <th scope="row"></th>
+                <th scope="col">monday</th>
+                <th scope="col">tuesday</th>
+                <th scope="col">wednesday</th>
+                <th scope="col">thursday</th>
+                <th scope="col">friday</th>
+                <th scope="col">saturday</th>
+                <th scope="col">sunday</th>
+            </tr>
+            <tr id="8">
+               <th scope="row">8 am</th>
+               <td rowspan="3">ali</td>
+               <td>asif</td>
+               <td rowspan="2">sohail</td>
+               <td rowspan="4">arif</td>
+               <td rowspan="5">mujahid</td>
+               <td rowspan="7">NaN</td>
+               <td rowspan="7">NaN</td>
+               
+            </tr>
+
+            <tr id="9">
+                <th scope="row">9 am</th>
+                <td rowspan="2">sohail</td>
+
+            </tr>
+            <tr id="10">
+                <th scope="row">10 am</th>
+                <td rowspan="1">ali</td>
+
+            </tr>
+            <tr id=11>
+                <th scope="row">11 am</th>
+                <td rowspan="1">asif</td>
+                <td rowspan="1">ali</td>
+                <td rowspan="1">arif</td>
+
+            </tr>
+            <tr id=12>
+                <th scope="row">12 am</th>
+                <td>sohail</td>
+                <td>asif</td>
+                <td>asif</td>
+                <td>asif</td>
+                
+
+            </tr>
+        </table>
+        <h2>LONG Table </h2>
+        <p>each table has its 
+        <br>
+        <ol>
+            <li><p>
+                <h4 style="font-weight: initial;"><b>Head</b> as <b> thead tag</b>&nbsp;&nbsp;&nbsp; &lt;thead&gt;</h4>
+                in <b>thead</b> tag we use same <br><b>tr</b> tage <br> <b>th</b> tags
+            </p>
+            </li>
+
+            <li><p>
+                <h4 style="font-weight: initial;">
+                    <b>Body</b> as <b> tbody tag</b>&nbsp;&nbsp;&nbsp; &lt;tbody&gt;
+                    in <b>tbody</b> tag we use <br> <b>tr</b> tag<br> <b>td</b> tag
+                </h4>
+            </p>
+            </li>
+                
+            <li><p>
+                <h4><b>foot</b> as <b> tfoot tag</b>&nbsp;&nbsp;&nbsp; &lt;tfoot&gt;</h4>
+                in <b>tfoot</b> tag we use <br> <b>tr</b> tag <br> <b>td</b> tag
+            </p></li>
+        </ol>
+        <p>All 3 come unsder main <b>table tag</b> </p>
+        </p>
+<h2 style="text-align: center;">MY approach is to apply "thead" wrap "tbody" wrap and "tfoot" wrap after completing table using emment:wraper and abbrivation by ctrl+shift+p</h2>
+<figure style="text-align: center;">
+    <img src="family/images/thead_tbody_tfoot.png">
+    <figcaption>Table : with <b> thead | tbody | tfoot</b> tag </figcaption>
+</figure>        
+
+    
+    </p>
+
+<h2><hr>Width and Spacing - <b style="color: gray;font-weight: 20;"> OLD CODE </b>: </h2>
+<ul>
+    use these attributes inside <b>&lt;table&gt;&nbsp;&nbsp;&nbsp;&lt;/table&gt;</b>
+    <li>width="400"</li>
+    <li>cellpadding ="10"</li>
+    <li>cellspacing="5"</li>
+</ul>
+<h2><hr>BORDER AND BACKGROUND - <b style="color: gray;font-weight: 20;"> OLD CODE </b>: </h2>
+<ul>
+    use these attributes inside <b>&lt;table&gt;&nbsp;&nbsp;&nbsp;&lt;/table&gt;</b>
+    <li>border="2"</li>
+    <li> bgcolor="#efefef</li>
+<h3>we can use above attributes in <b style="color: gray;"> &lt;td &gt; tag also</b></h3>
+<hr style="color: gray;border: 10px solid; border-style: solid;">
+<h2 style="color: gray;font-weight: 30px;">SUMMARY TABLE</h2>
+<ul>
+    <li>
+        The &lt;table&gt; element is used to add tables to a web
+            page.
+    </li>
+        <li>
+            A table is drawn out row by row. Each row is created
+            with the &lt;tr&gt; element.
+        </li>
+        <li>
+            Inside each row there are a number of cells
+            represented by the &lt;td%gt; element (or &lt;th&gt; if it is a
+            header).
+        </li>
+        <li>
+            You can make cells of a table span more than one row
+            or column using the rowspan and colspan attributes.
+        </li>
+        <li>
+            For long tables you can split the table into a &lt;thead&gt;,
+            &lt;tbody&gt;, and &lt;tfoot&gt;.
+        </li>
+    
+</ul>
+<hr style="border: gray 10px solid;">
+<figure style="padding: 3px;" >
+    <img src="family/images/covid19.jpg"  alt="" width="370px"  style="float: left;" > 
+
+    <table style="width: 1000px;text-align: center; border:2 ;background-color: pink; float: right; " cellspacing="3" cellpadding="5" >
+        <thead style="background: seashell;font-size: 20px;" >
+            <tr>
+                <th scope="col" colspan="3">COVID-19 </th>
+            </tr>
+            <tr style="padding: 100px;" >        <th scope="col">Country</th>                                      <th scope="col">Cases</th>          <th scope="col">Deaths</th>         </tr>
+        </thead>
+        
+        <tbody style="background: rosybrown;font-weight: bold; width: 1000px;">
+            <tr >        <th scope="row">United States of America</th>           <td>122653</td>                       <td></td>                 </tr>
+            <tr>        <th scope="row">Italy</th>                                  <td>97689</td>                       <td></td>              </tr>
+            <tr>        <th scope="row">China</th>                                           <td>82455</td>               <td></td>               </tr>
+            <tr>        <th scope="row">Spain</th>                                           <td>78797</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">Germany</th>                                           <td>57298</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">Iran</th>                                           <td>41495</td>                     <td></td>               </tr>
+            <tr>        <th scope="row">France</th>                                           <td>39642</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">The United Kingdom</th>                               <td>19526</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">Switzerland</th>                                      <td>14274</td>                  <td></td>               </tr>
+            <tr>        <th scope="row">Netherlands</th>                                       <td>10866</td>                  <td></td>               </tr>
+            <tr>        <th scope="row">Belgium</th>                                           <td>10836</td>                  <td></td>               </tr>
+            <tr>        <th scope="row">Republic of Korea</th>                                 <td>9661</td>                  <td></td>               </tr>
+            <tr>        <th scope="row">Turkey </th>                                           <td>9271</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">Austria</th>                                           <td>8813</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">Portugal</th>                                           <td>5962</td>                 <td></td>               </tr>
+            <tr>        <th scope="row">Canada</th>                                           <td>5655</td>                    <td></td>               </tr>
+            <tr>        <th scope="row">Israel</th>                                           <td>4247</td>                    <td></td>               </tr>
+             
+    
+        </tbody>
+        <tfoot style="background: seashell;font-size: 20px;">
+            <tr><th scope="col">Total</th>                   <th scope="col"></td>                    <th scope="col"></th>               </tr>
+        </tfoot>
+    </table>
+    <img src="family/images/covid19_2.jpg"  alt="" width="370px"  style="float: left;" > 
+
+</figure>
 </body>
 </html>
 
