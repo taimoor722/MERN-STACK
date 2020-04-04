@@ -414,10 +414,10 @@ we move out of main door '../' and reach to street folder<br>
     
 </ul>
 <hr style="border: gray 10px solid;">
-<figure style="padding: 3px;" >
-    <img src="family/images/covid19.jpg"  alt="" width="370px"  style="float: left;" > 
+<figure style="padding: 3px;  width: 100%; height: 300px; display: flex; justify-content: space-around" >
+    <img src="family/images/covid19.jpg"  alt="" width="370px" style="  " > 
 
-    <table style="width: 1000px;text-align: center; border:2 ;background-color: pink; float: right; " cellspacing="3" cellpadding="5" >
+    <table  onclick="remove()"  style="  text-align: center; border:2 ;background-color: pink;  " cellspacing="3" cellpadding="5" >
         <thead style="background: seashell;font-size: 20px;" >
             <tr>
                 <th scope="col" colspan="3">COVID-19 </th>
@@ -425,8 +425,8 @@ we move out of main door '../' and reach to street folder<br>
             <tr style="padding: 100px;" >        <th scope="col">Country</th>                                      <th scope="col">Cases</th>          <th scope="col">Deaths</th>         </tr>
         </thead>
         
-        <tbody style="background: rosybrown;font-weight: bold; width: 1000px;">
-            <tr >        <th scope="row">United States of America</th>           <td>122653</td>                       <td></td>                 </tr>
+        <tbody style="background: rosybrown;font-weight: bold; width: 1000px;" >
+            <tr >        <th scope="row" >United States of America</th>           <td>122653</td>                       <td></td>                 </tr>
             <tr>        <th scope="row">Italy</th>                                  <td>97689</td>                       <td></td>              </tr>
             <tr>        <th scope="row">China</th>                                           <td>82455</td>               <td></td>               </tr>
             <tr>        <th scope="row">Spain</th>                                           <td>78797</td>                 <td></td>               </tr>
@@ -450,9 +450,49 @@ we move out of main door '../' and reach to street folder<br>
             <tr><th scope="col">Total</th>                   <th scope="col"></td>                    <th scope="col"></th>               </tr>
         </tfoot>
     </table>
-    <img src="family/images/covid19_2.jpg"  alt="" width="370px"  style="float: left;" > 
+    <img  id='2nd-image'src="family/images/covid19_2.jpg"  alt="" width="370px" style=" " onclick="remove()"  > 
 
 </figure>
-</body>
-</html>
+<script>
+    function remove(){
+        if  (document.getElementById('2nd-image').style.display != 'none'){
+            document.getElementById('2nd-image').style.display = 'none';
+
+        }
+        else if(document.getElementById('2nd-image').style.display === 'none'){
+            document.getElementById('2nd-image').style.display = 'inline';
+        }
+            
+    }
+</script>
+
+<h2><hr>chapter # 7 : Forms</h2>
+<ul>
+    <li><h4>ADDING TEXT:</h4>
+        <ul>
+            <li><b>Text Input</b> (single line) for email or user name,father name ,so we use <b>input tag</b><br>
+                input type="text" name="CNIC" size="15" maxlength="13"<br>
+                <b>CNIC : </b><input type="text" name="CNIC" size="15" maxlength="13" ></li>
+            <li><b>Password input</b> (single line) but has mask over characters , so we use<b>input tag</b><br>
+                input type="password" name="Password"<br>
+                <b>Password :<input type="password" name="Passwoes"></b> </li>
+            <li><b>Text Area </b>to write message or comment multiline, but in this we use <b>textarea tag</b><br>
+            <textarea name="message" cols="50" rows="3">your message here each character get 1 col space so 50 charater box</textarea> </li>
+        </ul>
+    </li>
+    <li>MAKING CHOICES :
+        <ul>
+            <li><b>Radio button</b></li>
+            <li><b>Check boxes</b></li>
+            <li><b>Drop-down box</b></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </li>
+</ul>
 

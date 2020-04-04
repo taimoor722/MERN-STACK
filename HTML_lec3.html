@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><hr>TABLE</h2>
+    <p>assignment predioc table</p>
+
+    <h2><hr>chapter no # 7: FORM</h2>
+    
+    
+    <form action="databaseurl.com" method="get">
+        <p>action contain server link 
+            form fill goto cloud database
+            so any form u fill
+
+            method we use get
+            u will understand it better when using database 
+            connection 
+            when u have small form limited values to 
+            insert we use method<b>get</b>
+            but when your form is big then
+            we use <b>post</b>method
+
+        </p>
+        name attribute is <b>identity</b>main thing is indentity<br>
+        Username :<input type="text" name="username" size="15" maxlength="30">
+        <br>
+        Password : <input type="password" name="Password">
+        <br>
+        Cnic : <input type="number" name="cnic" size="13" maxlength="13">
+        <br>
+        message:<br>
+        <textarea  name="message" id="" cols="30" rows="10">we love your feedback...</textarea>
+        <br>
+        <b>radio button</b>
+        <br>
+        <p>please set gender<br>
+          male : <input type="radio" name="gender"value="male" ><br>
+          female:<input type="radio" name="gender" value="female"><br>
+          other : <input type="radio" name="gender " value="other"><br>
+          value is what get stored 
+        </p>
+        <br>
+        <p>check box<br>
+            checkbox for multiple selection<br>
+            select more then one option<br>
+            <input type="checkbox" name="answer" value="A">
+            <input type="checkbox" name="answer" value="B">
+            <input type="checkbox" name="answer"values="C">
+            <input type="checkbox" name="answer" value="D">
+            to make any random option to make it default
+            <br> use attribut <b>selected </b>with that option
+        </p>
+        <p>DROP DOWN LIST BOX<br>
+        we use <b>select tag</b> with <b>option tags </b>inside it<br>
+        <b>option</b> has attribute <b>value=</b>
+        <br><b>select</b> has attribute <b>name</b><br>
+
+        <select name="country">
+            <option value="pakistan">pakis</option>
+            <option selected value="saudi arab">Saudia</option>
+            <option value="Dubai">Dubai</option>
+
+        </select>
+        <p>Multipl select from drop down<br>we use another attribute
+            <br><b>multiple="multiple"</b> with <b>select</b> tag<br>
+
+            <select multiple="multiple"  name="country">
+                <option value="pakistan">pakis</option>
+                <option selected value="saudi arab">Saudia</option>
+                <option value="Dubai">Dubai</option>
+    
+            </select>
+        </p>
+        <p>
+            <b>input type="file"</b> this is use to upload file<br>
+            for cv pic pdf <br>
+            upload file<br>
+            <input type="file" name="">
+
+            <br>
+            <p>to submit your form to server we use input <b>type="submit"</b></p>
+
+            <input type="submit"  value="press it to submit">
+
+            <br> there are two ways to define <b>button</b> on is to use input with type="submit"
+            <br>
+            we can use <b>button tag</b>with attribute <b>type="submit"</b><br><br>
+            <button type="submit">press button</button>
+            <br>
+            both will do same job as type="submit"
+
+            <h5>thired way to submit is using  type="image"</h5>
+            so user press on image to submit<br>
+            <b>click on  image : </b><br>
+            <input type="image" src="family/images/covid19_2.jpg" width="50">
+
+            <br><br>
+            type="hidden"<br>
+            <input type="hidden" >
+        
+        </p>
+        </p>
+
+        <h3>LABEL</h3>
+        <label>click me to enter :</label><input type="text" name='user'><br>
+        <label for id="cnic">cnic :</label><input type="number" name='cnic'>
+
+        <h3>fieldset</h3>
+        to divide form into subpart we use <b>fieldset</b> 
+        <fieldset>
+            <legend>legends-personal detail</legend>
+            name : 
+            <input  required type="text" name="user">
+            <br><br>
+            <input type="submit">
+            <br><br>
+            your birthdate<br>
+            <input type="date" name="date_of_birth">
+            <br>
+            email : <input type="email"><br>
+            url  : <input type="url"><br>
+            search : <input type="search"><br>
+
+
+        </fieldset>
+
+    </form>
+    <h3>place holder</h3>
+    <p>placeholder is an attribute of inpute which show message as by default</p>
+    <input type="text" placeholder="this is placeholder ">
+
+</body>
+</html>
