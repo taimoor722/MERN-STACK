@@ -470,29 +470,169 @@ we move out of main door '../' and reach to street folder<br>
 <ul>
     <li><h4>ADDING TEXT:</h4>
         <ul>
-            <li><b>Text Input</b> (single line) for email or user name,father name ,so we use <b>input tag</b><br>
-                input type="text" name="CNIC" size="15" maxlength="13"<br>
+            <li><b>Text Input</b> <br><br>
+                input <b>type="text"</b> name="CNIC" size="15" maxlength="13"<br>
                 <b>CNIC : </b><input type="text" name="CNIC" size="15" maxlength="13" ></li>
-            <li><b>Password input</b> (single line) but has mask over characters , so we use<b>input tag</b><br>
-                input type="password" name="Password"<br>
+            <hr style="float: left; width: 400px; color: goldenrod; border:10px solid; ">
+            <br><br>
+            <li><b>Password input</b><br><br>
+                input <b>type="password"</b> name="Password"<br>
                 <b>Password :<input type="password" name="Passwoes"></b> </li>
-            <li><b>Text Area </b>to write message or comment multiline, but in this we use <b>textarea tag</b><br>
-            <textarea name="message" cols="50" rows="3">your message here each character get 1 col space so 50 charater box</textarea> </li>
+                <hr style="float: left; width: 400px; color: goldenrod; border:10px solid; ">
+
+            <br><br>
+            <li><b>Text Area </b>
+                <br>
+                <br>
+                textarea name="message" cols="50" rows="3"<br>
+            <textarea name="message" cols="50" rows="3">your message here each char acter get 1 col space so 50 charater box</textarea> </li>
         </ul>
     </li>
+    <hr>
     <li>MAKING CHOICES :
         <ul>
-            <li><b>Radio button</b></li>
-            <li><b>Check boxes</b></li>
-            <li><b>Drop-down box</b></li>
+            <li><b>Radio button</b>
+                <br>
+                in <b>type="radio"</b> u are only allowed to pick on item from those who have same <b>name="Test"</b>
+                <br>
+                input type="radio" name="Test" value="0"  checked 
+                <br>
+                Physic<input type="radio" name="Test" value="0" checked >
+                Math<input type="radio" name="Test" value="1" >
+                Chemistry<input type="radio" name="Test" value="2" >
+            
+            </li>
+            <hr style="float: left; width: 400px; color: goldenrod; border:10px solid; ">
+            <br><br>
+            <li><b>Check boxes</b>
+                <br>
+                input <b>type="checkbox"</b> name="subjects-selected" checked    allow u to select multiple with same <b>name</b>
+                <br>
+                physics <input type="checkbox" name="subjects-selected" value="0" size="2" >
+
+                chemistry<input type="checkbox" name="subjects-selected" value="1">
+                math<input type="checkbox" name="subjects-selected" value="2">
+                bio <input type="checkbox" name="subjects-selected" value="3" checked>
+    
+
+            </li>
+            <hr style="float: left; width: 400px; color: goldenrod; border:10px solid; ">
+            <br><br>
+            <li><b>Drop-down box</b><br>
+            <b>select</b> tag with name="" | <b> option </b >tag with value=""
+                <br>
+                <br>
+                <select name="Country">
+                    <option value="0">Pakistan</option>
+                    <option value="1">Saudia</option>
+                    <option value="2" selected>Afghanistan</option>
+                    <option value="3"> Iran</option>
+                </select>
+                <br>
+                <br>
+                for multiple selection use this attribute in <b>select tag</b><br><br>
+                ===> <b>multiple="multiple"<br><br>
+                    size has nothing to do with multiple size is to just display increase size of list window size="2"</b>
+
+                <br><br>press ctrl and then select multiple<br><br>
+                <select name="cloth" multiple="multiple" size="3">
+                    <option value="0">black shit</option>
+                    <option value="1">green shit</option>
+                    <option value="2" selected>blue jeans</option>
+                    <option value="3">skin jeans</option>
+                </select>
+            </li>
         </ul>
     </li>
-    <li>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </li>
+    <hr>
+</ul>
+<h2><hr>UPLOAD FILE</h2>
+<form action="" method="post">
+    type="file"<br><br>use post method in form<br><br>
+    <input type="file"name="user_pic" >
+
+</form>
+<h2><hr>submit button</h2>
+type="submit"<br>
+value="ok done submit" -show 
+<form action="">
+    <input type="submit" value="ok done submit">
+</form>
+<h2><hr>type="image"</h2>
+use image to submit
+
+<input type="image" src="family/images/sir_ghouse.jpeg" height="40px">
+<br>
+<h2><hr>type="hidden"</h2>
+<p><b>to add values to form that user cannot see</b><br>
+    <br><br>
+    hidden form control. These form
+    controls are not shown on the
+    page (although you can see them
+    if you use the View Source option
+    in the browser). They allow web
+    page authors to add values to
+    forms that users cannot see.
+    For example, a web page author
+    might use a hidden field to
+    indicate which page the user was
+    on when they submitted a form.</p>
+<input type="hidden" name="user_no" value="123">
+<h1><hr>&lt;button&gt;</h1>
+<p>buttin tag allow u to integrate image and text together and perform different function on click</p>
+<button><a href="https://www.youtube.com/watch?v=lf1YFo3o_Tw&list=PLsie5yev2v9Ttdk_Uf8C1s5g1jPZu2bvu&index=15" target="_blank"><img src="family/images/dexter.png" style="height: 30px;">Click to run</a></button>
+<h2><hr>&lt;label&gt;</h2>
+<p>label tag is use to label text with input<br>
+<b>label</b> use for="xyz"<br>
+<b>input</b> use id="xyz"<br>
+this help to clear which text is for which input<br>
+&lt;label for="hospital"&gt; MAROOF &lt;/label&gt;<br>
+&lt;input type="email" id="hospital"&gt;<br>
+<label for="hospital">MAROOF </label><br>
+<input type="email" id="hospital" name placeholder="your-maroof-email">
+</p>
+
+<h1><hr>fieldset & legend</h1>
+<p>
+    &lt;fieldset&gt; &lt;/fieldset&gt;<br>are use to divided one big form to small sections
+    <br><br>
+    &lt;legend&gt; &lt;/legend&gt; <br>legend is used to give name to that small section
+
+    <form action="">
+
+    <fieldset style="height: 300px; width: 300px;">
+        <legend>Personal info:</legend>
+    </fieldset>
+
+    <fieldset style="height: 300px; width: 300px;">
+        <legend>Educational info:</legend>
+    </fieldset>
+    <fieldset style="height: 300px; width: 300px;">
+        <legend>Future info:</legend>
+    </fieldset>
+    </form>
+</p>
+<h2><hr>&lt;input required="required" &gt;</h2>
+<form>
+    <input type="text" required="required" placeholder="must input text">
+    <input type="submit">
+</form>
+<form>
+    <input type="text"  placeholder="optional">
+    <input type="submit">
+</form>
+<h1><hr>Other type=" "</h1>
+<ul>
+    <li>type="email"</li>
+    <li>type="url"</li>
+    <li>type="search"</li>
+    <li>type="date"</li>
+    <li>type="cal"</li>
 </ul>
 
+
+</ul>
+
+<h1 style="font-weight: bolder; color: gray;"><hr style="border:10px steelblue solid;">Chapter # 8 : Extra Markup</h1>
+</body>
+</html>
