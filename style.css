@@ -1,0 +1,70 @@
+/* in css html elements are called Selectors with {bracket} for styling */
+h1{
+    /* color:gold; 
+        this is 
+        'decleration'
+        combination of
+    'property' :'value' */
+    color: gray;
+    background-color: aqua;
+}
+
+*{
+    background-color: aquamarine;
+}
+
+.bio{
+    border: black solid;
+    background-color: cadetblue;
+    font-style: bold;
+}
+
+#first{
+    font-size: x-large;
+    font-style:white;
+}
+
+
+
+/* parent>directchild */
+li>a{ 
+    font-size: 30px;
+
+}
+/* forfather decentend */
+li a{
+    background-color: cornflowerblue;
+}
+
+/* adjust sibling h1+p{} */
+
+/* General Sibli ng
+Selector div~p
+
+Matches an element that is a
+sibling of another, although it
+does not have to be the directly
+preceding element
+*/
+
+h1{
+    color:darkcyan;
+         /* color namr or hexcode or rgb value */
+    background-color: hsl(0, 20%, 50%);
+    background-color: hsla(255, 60%, 50%, 0.9);
+    background-color: rgba(255, 160, 0, 0.8);
+    /* alpha is opacity */
+    opacity: 0.2;
+}
+
+/* hue range 0-360 and has all colors */
+/* saturation work on percentage 0%-100% complete gray 100% */
+
+
+
+/* COLOR CHAPTER ENDED CHAPTER 11 */
+
+
+
+
+/* TEXT CHAPTER :12#  */
