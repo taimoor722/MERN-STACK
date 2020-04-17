@@ -56,3 +56,11 @@ sup{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    margin-bottom: 10px;
+
+}
