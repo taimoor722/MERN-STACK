@@ -39,6 +39,14 @@ body{
 #thankyou a{
     text-decoration: none;
     color: crimson;
+    
+}
+a:hover{
+    background-color: azure;
+    font-size: 20px;
+    text-decoration: underline;
+    
+
 }
 
 sup{
