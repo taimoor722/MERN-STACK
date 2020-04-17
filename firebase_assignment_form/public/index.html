@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WM11607-Taimoor-Arif-Assignment-Saylani</title>
 </head>
 <body>
 <header>
@@ -11,14 +12,14 @@
     <img id="main_image" src="http://www.saylaniadmissions.com/wp-content/uploads/2018/10/Saylani-logo.png">
     <h2><a href="#">STUDENT REGISTRATION FORM</a></h2>
 </header>
-<form method="GET" action="#">
+<form method="GET" action="thankyou.html">
     <table>
         <tr>
            <td >
-               <span>FIRST NAME &nbsp; &nbsp; &nbsp;
+               <label for="first_name" > <sup>*</sup> FIRST NAME</label> 
            </td>
                 <td colspan="4">
-                    <input name="first_name" type="text" size="33" maxlength="30" required placeholder="Taimoor" pattern="[a-zA-Z ]{3,30}">
+                    <input name="first_name" type="text" size="33" maxlength="30"  placeholder="Taimoor" pattern="[a-zA-Z ]{3,30}">
                     &nbsp; &nbsp; &nbsp;
                     (max 30 character a-z and A-Z)</span> 
                 </td>
@@ -26,10 +27,10 @@
         </tr>
         <tr>
             <td>
-                LAST NAME &nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;LAST NAME &nbsp; &nbsp; &nbsp;&nbsp;
             </td>
                 <td  colspan="4">
-                    <input  required name="last_name" type="text" size="33" maxlength="30" required placeholder="Arif" pattern="[a-zA-Z ]{3,30}">
+                    <input   name="last_name" type="text" size="33" maxlength="30"  placeholder="Arif" pattern="[a-zA-Z ]{3,30}">
                     &nbsp; &nbsp; &nbsp;
                     (max 30 character a-z and A-Z)
                 </td>
@@ -37,7 +38,7 @@
         </tr>
         <tr>
             <td>
-                <span>DATE OF BIRTH &nbsp; &nbsp; &nbsp; 
+                <span><sup>*</sup>DATE OF BIRTH &nbsp; &nbsp; &nbsp; 
             </td>
                 
                 <td  colspan="4">
@@ -57,13 +58,13 @@
                         <option value="11">Nov</option>
                         <option value="12" >Dec</option>
                     </select>
-                    <select id="day" >
+                    <select required id="day" >
                         
                         <option> -day- </option>
                         
                     </select>
     
-                    <select id="year" >
+                    <select required id="year" >
                         
                         <option> -year- </option>
                         
@@ -72,32 +73,32 @@
         </tr>
         <tr>
             <td>
-                EMAIL ID&nbsp; &nbsp; &nbsp;:
+                &nbsp;&nbsp;EMAIL ID&nbsp; &nbsp; &nbsp;:
             </td>
              <td  colspan="4">
-                 <input required name='email' type="email">
+                 <input  name='email' type="email">
              </td>
         </tr>
         <tr>
             <td>
-                MOBILE NUMBER
+                <sup>*</sup>MOBILE NUMBER
             </td> 
             <td  colspan="4">
-                <input  placeholder="3449848310" maxlength="10" required name="cell" type="text" pattern="[0-9]{10}"> (10 DIGIT NUMBER)
+                <input  placeholder="3449848310" maxlength="10" required name="cell" type="text" pattern="[0-9]{10}">&nbsp; &nbsp; &nbsp; (10 DIGIT NUMBER)
             
             </td>
         </tr>
         <tr>
             <td>
-                Gender  &nbsp; &nbsp; &nbsp;
+                <sup>*</sup>Gender  &nbsp; &nbsp; &nbsp;
             </td>
             <td  colspan="4">
-                Male <input required name='gender' value='1'type="radio"> Female<input  required name='gender' value='0'type="radio"></li>
+                Male <input  name='gender' value='1'type="radio"> Female<input   name='gender' value='0'type="radio"></li>
             
             </td>
             <tr>
             <td>
-                ADDRESS &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp;ADDRESS &nbsp; &nbsp; &nbsp;
             </td>
              <td  colspan="4">
                  <textarea cols="30" rows="4"></textarea></li> 
@@ -105,80 +106,81 @@
              </tr>
         <tr>
             <td>
-                CITY  &nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp;&nbsp;CITY  &nbsp; &nbsp; &nbsp;&nbsp;
             </td>
                 <td  colspan="4">
-                    <input  required name="city" type="text" size="33" maxlength="30" required placeholder="rawalpindi" pattern="[a-zA-Z ]{3,30}">
+                    <input   name="city" type="text" size="33" maxlength="30"  placeholder="rawalpindi" pattern="[a-zA-Z ]{3,30}">
                     &nbsp; &nbsp; &nbsp;
                     (max 30 character a-z and A-Z)
                 </td>
         </tr>
         <tr>
             <td>
-                PIN CODE &nbsp; &nbsp; &nbsp;&nbsp;
+                <sup>*</sup> PIN CODE &nbsp; &nbsp; &nbsp;&nbsp;
             </td>
                 <td  colspan="4">
-                    <input  required name="pincode" type="text" size="8" maxlength="6" required placeholder="132012" pattern="[0-9]{6}">
+                    <input  required name="pincode" type="text" size="8" maxlength="6"  placeholder="132012" pattern="[0-9]{6}">
                     &nbsp; &nbsp; &nbsp;
                     (6 DIGIT PIN CODE)
                 </td>
         </tr>
         <tr>
             <td>
-                STATE &nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;STATE &nbsp; &nbsp; &nbsp;&nbsp;
             </td>
                 <td  colspan="4">
-                    <input  required name="state" type="text" size="33" maxlength="30" required placeholder="PUNJAB" pattern="[a-zA-Z ]{3,30}">
+                    <input   name="state" type="text" size="33" maxlength="30"  placeholder="PUNJAB" pattern="[a-zA-Z ]{3,30}">
                     &nbsp; &nbsp; &nbsp;
                     (max 30 character a-z and A-Z)
                 </td>
         </tr>
         <tr>
             <td>
-                COUNTRY &nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;COUNTRY &nbsp; &nbsp; &nbsp;&nbsp;
             </td>
                 <td  colspan="4">
-                    <input  required name="country" type="text" size="33" maxlength="30" required placeholder="Pakistan" pattern="[a-zA-Z ]{3,30}">
+                    <input   name="country" type="text" size="33" maxlength="30"  placeholder="Pakistan" pattern="[a-zA-Z ]{3,30}">
                     &nbsp; &nbsp; &nbsp;
                     (max 30 character a-z and A-Z)
                 </td>
         </tr>
         <tr>
             <td>
-                HOBBIES &nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp;HOBBIES &nbsp; &nbsp; &nbsp;&nbsp;
             </td>
                 <td  colspan="4" id='hobbies'>
                    Reading <input   name="hobbies" value="1" type="checkbox" >
                    Sports <input   name="hobbies"  value="2" type="checkbox">
                    Cooking <input   name="hobbies" value="3" type="checkbox" >
-                   <br><button id='add_more_hobbies' onclick="addhobby()">Add more</button>
-                   <input  name='hobbie_to_add'  pattern='[a-zA-z ]+' type="text"> <br>
+                   <br><button type="button" id='add_more_hobbies' onclick="addhobby()">Add more</button>
+                   <input  name='hobbie_to_add'  pattern='[a-zA-z ]+' type="text"> 
+                   <button type="button" id='remove_hobby' onclick="removehobby()">Remove</button><br>
                     
                 </td>
         </tr>
         <tr >
-            <td rowspan="7">QUALIFICATION</td>
+            <td rowspan="7">&nbsp; &nbsp;QUALIFICATION</td>
         <td>
                 <tr style="text-align: center;">
                     <td>SI.No. Examintaion</td> <td>Board</td><td>Percentage</td><td>Year of Passing</td>
                 </tr>
                 <tr>
-                    <td>1 Class X </td> <td> <input maxlength="20"   name=""  type="text"> </td> <td><input maxlength="5" pattern="[0-9]{2}(.\d\d)?" name=""  type="text">  </td> <td> <input   name=""  type="text">   </td>
+                    <td>1 Class X </td> <td> <input maxlength="20"   name="e1"  type="text"> </td> <td><input  placeholder="99.99" maxlength="5" pattern="\d\d[.]\d\d" name="p1"  type="text">  </td> <td> <input maxlength="4" pattern="\d\d\d\d" placeholder="2012" name="y1"  type="text">   </td>
                 </tr>
                 <tr>
-                    <td>2 Class XII  </td> <td> <input maxlength="20"  name=""  type="text"> </td> <td><input maxlength="5" pattern="[0-9]{2}(.\d\d)?"  name=""  type="text">  </td> <td> <input   name=""  type="text">   </td>
-                </tr>
-
-                <tr>
-                    <td>3 Graduation  </td> <td> <input maxlength="20"  name=""  type="text"> </td> <td><input maxlength="5" pattern="[0-9]{2}(.\d\d)?"  name=""  type="text">  </td> <td> <input   name=""  type="text">   </td>
+                    <td>2 Class XII  </td> <td> <input maxlength="20"  name="e2"  type="text"> </td> <td><input maxlength="5" placeholder="98.00" pattern="\d\d[.]\d\d"  name="p2"  type="text">  </td> <td> <input maxlength="4" pattern="\d\d\d\d" placeholder="2016"  name="y2"  type="text">   </td>
                 </tr>
 
                 <tr>
-                    <td>4 Master  </td> <td> <input  maxlength="20" name=""  type="text"> </td> <td><input maxlength="5" pattern="[0-9]{2}(.\d\d)?"  name=""  type="text">  </td> <td> <input   name=""  type="text">   </td>
+                    <td>3 Graduation  </td> <td> <input maxlength="20"  name="e3"  type="text"> </td> <td><input maxlength="5" pattern="\d\d[.]\d\d" placeholder="98.20" name="p3"  type="text">  </td> <td> <input maxlength="4" pattern="\d\d\d\d" placeholder="2018"  name="y3"  type="text">   </td>
                 </tr>
 
                 <tr>
-                    <td>  </td> <td> (20 Char Max)  </td> <td> (Upto 2 Decimal) </td> <td>    </td>
+                    <td>4 Master  </td> <td> <input  maxlength="20" name="e4"  type="text"> </td> <td><input maxlength="5" pattern="\d\d[.]\d\d" placeholder="98.55" name="p4"  type="text">  </td> <td> <input maxlength="4" pattern="\d\d\d\d" placeholder="2020" name="y4"  type="text">   </td>
+                </tr>
+
+                <tr>
+                    <td>  </td> <td> (20 Char Max)  </td> <td> (Upto 2 Decimal) </td> <td> (4 Digits)   </td>
                 </tr>
 
         </td>
@@ -187,67 +189,33 @@
         </tr>
         <tr>
             <td>
-                COURSES APPILED FOR
+                <sup>*</sup>COURSES APPILED FOR
                 
             </td>
             
                 <td  colspan="4" id='degree'>
-                    
-                    BCA <input   name="degree" value="1" type="checkbox" >
-                    B.Com  <input   name="degree"  value="2" type="checkbox">
-                    B.A  <input   name="degree" value="3" type="checkbox" >
-                    B.Sc<input   name="degree" value="3" type="checkbox"  >
+                    &nbsp; &nbsp; &nbsp;
+                    BCA <input  required name="degree" value="1" type="radio" >
+                    &nbsp; &nbsp; &nbsp;
+                    B.Com  <input   name="degree"  value="2" type="radio">
+                    &nbsp; &nbsp; &nbsp;
+                    B.A  <input   name="degree" value="3" type="radio" >
+                    &nbsp; &nbsp; &nbsp;
+                    B.Sc<input   name="degree" value="3" type="radio"  >
                     
                    
                     
                 </td>
         </tr>
-        <tr style="text-align: center;"><td colspan="5">
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+        <tr class="submit_reset_row"><td colspan="5">
+            <input type="submit" class="end_button" value="Submit">
+            <input type="reset" class="end_button" value="Reset">
         </td></tr>
     
     </table>
 </form>
 </body>
-<style>
-header {      
-    
-    text-align: center;
-    }
-table{
-    table-layout: fixed;
-    width: 67%;
-    border-collapse: collapse;
-    border: 3px solid purple;
-    margin: auto;
-    /* width: 800px;
-    height: 900px; */
-    background-color:blueviolet;
-    opacity:0.7 ;
-    padding-top: 20px ;
-}
-td{
-    color: white;
-    padding-left: 30px;
-    padding-top: 5px;
-}
-tr{
-    padding-left: 20px;
 
-} 
-
-input{
-    border-radius: 7px;
-    height: 30px;
-}
-
-body{
-    background-color: white;
-    /* background-image: url('D:/download pics/space2.jpg') ;
-} */
-
-</style>
 <script>
     var i;
     var opt;
@@ -282,5 +250,14 @@ body{
       }  
     }     
         }
+
+function removehobby(){
+    if (document.getElementsByName('hobbies').length >3){
+        var last=document.getElementsByName('hobbies').length;
+        document.getElementsByName('hobbies')[last-1].previousSibling.remove()
+            document.getElementsByName('hobbies')[last-1].remove()
+}
+    
+}
 </script>
 </html>
