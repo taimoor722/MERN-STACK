@@ -3,30 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is leaning html css ">
+    <meta name="keywords" content="html,css,beginner,coding,frontend,fullstack">
+    <meta name="robots" content="">
+    <meta name="author" content="taimoor arif">
+    <meta name="pragma" constructor(params) {
+        
+    }>
+    <meta name="expire" content="">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
    
 </head>
 <body>
-    <!-- <h1><hr1></hr1>iframe></h1>
-    
-    <h1 id='first'>meta tag</h1>
-    
+    <h1><hr>Chapter #8 Extra markup</h1>
+    <p>
+        <h3>id attribute</h3>
+        <div>
+            <b>id</b> has to be unique and no repeat of id value again<br>
+            id="name"
+        </div>
+        <h3>Class attribute</h3>
+        <div>
+            <b>Class</b>class values can be use at a=many places<br>
+            class="txt"<br>
+            then we can use this class attribute with this same
+            value at different tags
+            <br>
+            but id value has to be unique means that value should be use only once<br>
+            if you want to make another id you can do but id value must not be duplicate
+        </div>
+        <h3>div element &lt;div&gt;</h3>
+        <div>we use duv tag to group a set of elements together in obe block-level box
+            <br>div work as container it is <b>block level element</b><br>
+            div work as to create <b>divisions</b>
+        </div>
+        <h3>span &lt;span&gt; </h3>
+        <span>span act as equalent to div but inline element
+            it is used to either
+            <ol>
+                <li>Contain a section of text<br>
+                where there is no other suitable<br>
+            elemnent to differentiste it from its <br>
+        surronding text</li>
+                <li>span contain a number of inline elements</li>
+            </ol>
+            the moset common reason why people use &lt;span&gt;
+            <br>it to control apperance of the content of these<br>
+            elements using CSS
+        </span>
+        <h3>Iframe &lt;iframe&gt;</h3>
+        <div>
+            <b>iframe</b> is like a cut piece in your window and in that window<br>
+            you can see another page term <b>iframe</b> means <b>inline frame</b>
+        <br>
+        <div>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3322.0739458362127!2d73.06393336505286!3d33.6293246307231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+            !4m11!3e0!4m3!3m2!1d33.6280705!2d73.06613209999999!4m5!1s0x38df94ddc7264613%3A0xbff509be4535cfba!2sJamia%20Masjid%20Al-Hanan%20Road%2C%20Rawalpindi%2C%
+            20Pakistan!3m2!1d33.6306329!2d73.0665908!5e0!3m2!1sen!2s!4v1587113968777!5m2!1sen!2s" 
+            width="600"
+             height="450"
+              frameborder="0"
+               style="border:0;"
+                allowfullscreen=""
+                 aria-hidden="false"
+                  tabindex="0"></iframe>
+                 
+        
+             
+                <iframe width="600" height="450" src="https://www.youtube.com/embed/rqymUOHZkDw" 
+                frameborder="50" style="border:20px blanchedalmond;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvooks%2Fphotos%2Fp.481920625793361%2F481920625793361%2F%3Ftype%3D3&width=500" 
+                width="300" height="443" 
+                style="border:none;overflow:hidden" scrolling="no" seamless frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            
+        </div>
+        </div>
+        <h1><hr>Information about your page</h1>
+        <h3>meta  &lt;meta&gt;</h3>
+        <div> &lt;meta&gt; element lives inside  &lt;head&gt;
+            <br>and contains information about that web page
+            <br><br>
+            it is not visible to users but fulfils a numbers of<br>
+            purposes such as telling search engines about your pages,<br>
+            who created it and whether or not it is time<br>
+            sensitive if time sensitive it can be set to expire
+            <br>
+            i has name attribute and value can be anything 
+            common one are 
+            <dl>
+                <dt>description</dt>
+                <dd>This contains a description
+                    of the page. This description
+                    is commonly used by search
+                    engines to understand what the
+                    page is about and should be a
+                    maximum of 155 characters.
+                    Sometimes it is also displayed in
+                    search engine results.</dd>
+
+                <dd>This contains a description
+                        of the page. This description
+                        is commonly used by search
+                        engines to understand what the
+                        page is about and should be a
+                        maximum of 155 characters.
+                        Sometimes it is also displayed in
+                        search engine results.</dd>
+                <dt>keywords</dt>
+
+                <dd>This contains a list of commaseparated
+                    words that a user
+                    might search on to find the page.
+                    In practice, this no longer has
+                    any noticeable effect on how
+                    search engines index your site.</dd>
+
+                <dd>This contains a list of commaseparated
+                        words that a user
+                        might search on to find the page.
+                        In practice, this no longer has
+                        any noticeable effect on how
+                        search engines index your site.</dd>
+                <dt>robots</dt>
+                <dd>This indicates whether search
+                    engines should add this page
+                    to their search results or not. A
+                    value of noindex can be used if
+                    this page should not be added. A
+                    value of nofollow can be used
+                    if search engines should add this
+                    page in their results but not any
+                    pages that it links to.</dd>
+                
+                <dd>This indicates whether search
+                        engines should add this page
+                        to their search results or not. A
+                        value of noindex can be used if
+                        this page should not be added. A
+                        value of nofollow can be used
+                        if search engines should add this
+                        page in their results but not any
+                        pages that it links to.</dd>
+            </ul>
+        </div>
+
+    </p>
+    <h1><hr>video tag</h1>
+    <p>
+        <video src="../video obs/2020-04-09 19-28-07.mkv"
+        poster="/family/images/covid19_2.jpg"
+        
+         width="600" height="450" controls
+        
+        loop></video>
+    </p>
     
     <h1> chapter #10 : CSS</h1>
     <ul class="bio">
-        <li>what css does a<a href="https://google.com" target="_blank">link</a></li>
+        <li>what <a href="https://google.com" target="_blank"> CSS </a> do</li>
         
-        <li>How Css works <b><a href="https://google.com" target="_blank">this</a></b></li>
-        <li>Rules,Properties,and values<span><a href="https://google.com" target="_blank">that</a></span></li>
+        <li>How  <b><a href="https://google.com" target="_blank">  CSS  </a></b> works </li>
+        <li>Rules, Properties, and <span><a href="https://google.com" target="_blank"> values </a></span></li>
     </ul>
     <div >
         <p class="bio">using external css<br>
         using internal css<br>
         using inline   css<br>
     </p>
-    </div> -->
+    </div>
+    <div>
+        <p><dfn>direct child <b> li > a {  &nbsp; } -- </b></dfn>
+            Matches an element that is a
+            direct child of another direct child mean write after &lt; li &gt; tag if &lt; a &gt;  exist otherwise no effect
+        </p>
+        <p><dfn> Descendant Selector <b> div  b {  &nbsp; } -- </b></dfn>
+                Matches an element that is a descendent of another specified element (not just a direct child of that element)<br>
+                Targets any &lt; div &gt; elements that
+                    sit inside a &lt; b &gt; element, even if
+                    there are other elements nested
+                    between them
+            </p>
+        <p><dfn> Adjacent Sibling <b> dt+dd {  &nbsp; } -- </b></dfn>
+            Matches an element that is the next sibling of another<br>
+            Targets the first  &lt; dd &gt; element
+                after any  &lt; dt &gt; element (but not
+                other  &lt; dd &gt; elements)
+                Targets any elements that
+                    sit inside a element, even if
+                    there are other elements nested
+                    between them
+        </p>     
+    </div>
 <h1><hr>Chapter #11 :COLOR</h1>
+
 <h1>Taimoor</h1>
 </body>
 </html>

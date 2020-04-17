@@ -5,35 +5,57 @@ h1{
         'decleration'
         combination of
     'property' :'value' */
-    color: gray;
-    background-color: aqua;
+    /* color: gray; */
+    /* background-color: aqua; */
 }
 
+
+/* for all */
 *{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
+
+/* class name */
 .bio{
-    border: black solid;
-    background-color: cadetblue;
+    /* border: black solid; */
+    /* background-color: cadetblue; */
     font-style: bold;
 }
-
+/* id name */
 #first{
-    font-size: x-large;
-    font-style:white;
+    /* font-size: x-large; */
+    /* font-style:white; */
 }
 
 
 
 /* parent>directchild */
 li>a{ 
-    font-size: 30px;
+    color: tomato;
+}
+
+/* all a tag any level who come under li tag  */
+
+li a{    text-decoration: none;
+        
+         
 
 }
+
+ul a {
+    color: yellow;
+} 
+
+li>a{ 
+    color: tomato;
+}
+
 /* forfather decentend */
-li a{
-    background-color: cornflowerblue;
+div b{
+    color: white;
+    font-weight: bolder;
+    font-size: large;
 }
 
 /* adjust sibling h1+p{} */
@@ -48,20 +70,40 @@ preceding element
 */
 
 h1{
-    color:darkcyan;
+    /* color:darkcyan; */
          /* color namr or hexcode or rgb value */
-    background-color: hsl(0, 20%, 50%);
+    
+         /* background-color: hsl(0, 20%, 50%);
     background-color: hsla(255, 60%, 50%, 0.9);
-    background-color: rgba(255, 160, 0, 0.8);
-    /* alpha is opacity */
-    opacity: 0.2;
+    background-color: rgba(255, 160, 0, 0.8); */
+   
+    /* alp
+    ha is opacity */
+    
+    /* opacity: 0.2; */
 }
 
 /* hue range 0-360 and has all colors */
 /* saturation work on percentage 0%-100% complete gray 100% */
+body{
+    background-color:lightblue;
+    
+}
+
+/*target dd who is next to dt only first one 'dt  sibling only who is first dd '  */
+dt+dd{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
 
 
 
+/* all sibiling of dt who are dd */
+dt~dd{
+    color:darkolivegreen;
+    font-style: italic;
+}
 /* COLOR CHAPTER ENDED CHAPTER 11 */
 
 
