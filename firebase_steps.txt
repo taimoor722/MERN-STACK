@@ -1,0 +1,29 @@
+open firebase.google.com
+sig in
+add project
+Add project
+------
+2nd milestone
+open nodejs.org
+Download stable version
+Install
+run as admistrater
+cmd nodejs -v
+not npm -v
+-------------
+3rd milestone
+check for node version using (node -v)
+check for npm version using (npm -v)
+open cmd with using run as admisistartor
+now install firebase into my local system
+npm install --global firebase-tools
+firebase --version
+--------------
+firebase login
+1//03mpvLqXOGSwrCgYIARAAGAMSNwF-L9IrY7283p5ZYO0yaHhb9rifo4GT3n-dBOz_I3tv0DqK5348kDe4QoRxfTamKigC9zv-nOY
+Example: firebase deploy --token "$FIREBASE_TOKEN"
+
+firebase init
+use existing project
+make public folder
+replace index.html with your web files
