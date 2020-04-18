@@ -1,0 +1,130 @@
+
+a.format:link{
+    color: pink;
+}
+
+a.format:visited{
+    color: crimson;
+}
+a{
+    font-size: 50px;
+}
+
+a:hover{
+    background-color: cyan;
+}
+
+input:focus{
+    color: yellowgreen;
+}
+
+/* Existing ever p which has class as attribute*/
+/* p[class]{
+    color :red
+
+} */
+
+/* equality all p classes that have value cat init exactly */
+/* p[class='cat']{
+    color:blue;
+} */
+
+/* space all p class who haeve cat init spacesed */
+
+/* p[class~='cat']{
+    color:blue;
+}  */
+
+
+/* prefix match a specific classes whose value start with d */
+/* 
+p[class^='d']{
+    color:blue;
+}  */
+
+
+/* suffix classes that end with specifc character */
+
+p[class$='g']{
+    color:blue;
+} 
+img{
+    width: 100%;
+}
+.box1{
+    border:2px solid red;
+    /* width: 900px; */
+    min-height: 300px;
+    max-height: 400px;
+    min-width: 100px;
+    max-width: 600px;
+    overflow: scroll;
+}
+
+.box2{
+    background-color: blue;
+    padding: 40px solid black;
+    border: 20px solid pink;
+    margin: 30px ;
+    
+}
+.box3{
+    background-color:yellow;
+    padding: 40px solid black;
+    border: 30px solid green;
+    margin: 100px auto 20px auto;
+}
+
+.box4{
+    display: inline-block;
+    border:2px solid steelblue;
+    width: 40%;
+
+}
+.box5{
+    display: inline-block;
+    border:2px solid steelblue;
+    width: 40%;
+    box-shadow: 3px 3px 3px gray;
+
+
+}
+.box4>p{
+    width: 40%;
+    border: 10px solid springgreen;
+    display: inline-block;
+
+}
+.box5>p{
+    width: 40%;
+    border: 10px solid springgreen;
+    display: inline-block;
+    text-shadow:5px 5px 1px  steelblue;
+
+}
+
+.ls1{
+    list-style-type: lower-roman;
+}
+.ls2{
+    list-style-type: square;
+}
+
+.uls1{
+    list-style-type: decimal;
+}
+
+.uls2{
+    list-style-type: lower-latin;
+}
+.uls3 li{
+    /* list-style-image: url(f); */
+    width: 300px;
+    list-style-position:inside;
+}
+.uls3 li{
+    /* list-style-image: url(f); */
+    width: 300px;
+    margin:10px 20px 10px 20px;
+    list-style-position:inside;
+}
