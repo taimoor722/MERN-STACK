@@ -107,6 +107,73 @@ dt~dd{
 /* COLOR CHAPTER ENDED CHAPTER 11 */
 
 
+.my_name{
+    background-color: rgb(120, 170,150);
+}
+.my_name+ul{
+    background-color: rgba(0, 0,0,1);
+    color:rgb(255, 255,255);
+    
+}
 
-
+.hsl+ul{
+    background-color: hsl(30 , 99%, 50%);
+}
 /* TEXT CHAPTER :12#  */
+@font-face{
+    font-family: "Cho";
+    src:url('/fonts/choco_bear/Choco.otf');
+}
+.div3>b{
+color: hsl(30 , 99%, 50%);
+display: block;
+font-weight: bolder;
+font-size: large;
+font-stretch: extra-expanded;
+
+
+}
+
+
+
+.div3 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+-    width: 100%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    border:1px rgb(255, 255,255) solid;
+    color: rgb(255, 255,255);
+}
+.div3 b{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1%;
+    margin-top: 10%;
+    width: 100%;
+}
+.div3{
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0,0,0,1);
+    border: tomato solid;
+    width: 18%;
+    height: 300px;
+    margin: 30px 7% 30px 7%;
+    text-align: center;
+    }
+
+img{
+    display: block;
+    border:solid palegreen 3px;
+    margin: auto;
+}
+
+.card{
+    border: blue solid;
+}
+
+#chap12{
+    border: black solid;
+}

@@ -1,0 +1,842 @@
+
+
+
+body{
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: lightslategray;
+    background-color: whitesmoke;
+    z-index: 4;
+    word-spacing: 2px;
+}
+header li,nav li{
+    display: inline;
+}
+.topbar div{
+    display: inline-block;
+    margin: none;
+    padding: 0%;
+    color: white;
+    /* border: 1px blue solid; */
+    background-color:rgb(49,109,195);
+    
+}
+.social_media_link_inner{
+    width: 28%;
+    padding: 0%;
+    background-color:rgb(49,109,195);
+    margin: 0%;
+    float: left;
+    
+}
+
+.topstatement_inner{
+    margin:0px 0%; 
+    width: 42%;
+    
+
+}
+/* .topstatement_inner>div{
+    margin:auto;
+    width: 100%;
+    
+
+} */
+.topbutton_donation_inner{
+    width: 28%;
+    text-align: center;
+    padding: 0%;
+    margin: 0px;
+   
+
+}
+.topbar{
+    text-align: center;
+    width: 82%;
+    /* border: 1px brown solid; */
+    background-color:rgb(49,109,195);
+    margin: auto;
+    
+}
+.wrap1{
+    background-color:rgb(49,109,195);
+    width: 100%;
+
+}
+
+
+/* header div[class]{
+    
+} */
+
+header [class$="_inner"],nav [class$="_inner"]{
+    display: inline-block;
+
+}
+
+.topbar ul{
+    /* border: rgb(105, 39, 58) solid; */
+    width: 100%;
+    text-align: center;
+    background-color:rgb(49,109,195);
+        padding: 0%;
+}
+
+.topbar li{
+    /* border: chocolate solid; */
+    padding: 0%;
+    display: inline;
+    background-color:rgb(49,109,195);
+}
+
+.social_media_link_inner li{
+    /* float: left; */
+    list-style: none;
+    width:15%;
+    padding: 0%;
+    margin: 0px 5%;
+} 
+.social_media_link_inner ul{
+    text-align: left;
+    padding: 0%;
+}
+
+.topbutton_donation_inner ul{
+    text-align: right;
+    padding: 0%;
+}
+
+.topbutton_donation_inner li{
+display: inline-grid;
+    list-style: none;
+    width:80px;
+    height:30px ;
+/* border: olive dashed; */
+    padding: 0px 0px;
+    margin: 0.3% 0.5%;
+    text-align: center;
+} 
+
+.topbutton_donation_inner button{
+    font-size: 12px;
+    padding: 4%;
+    color: teal;
+    border-style: none;
+}
+/* now 2nd bar which is nav bar */
+nav{
+    width: 82%;
+   /* border: 1px brown solid; */
+    margin: auto;
+    position: sticky;
+    top:0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap2{
+    width: 100%;
+    background-color: white;
+    /* border: violet dotted; */
+    position: sticky;
+    top:0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+nav [class$="_inner"]{
+    /* border: aqua solid; */
+    display: flex;
+    color: black;
+    background-color: white;
+
+}
+nav>.logotop_inner{
+   margin-left: 0%;
+    width: 18%;
+}
+
+._inner{
+    /* border: wheat dotted; */
+    width: 82%;
+    text-align: right;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: flex-end; /*here it worked*/
+    
+    
+}
+
+._inner li{
+    
+    text-align: right;
+    margin:20px 0%;
+    /* border :rgb(49,109,195)  solid; */
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 4px 12px;
+    transition: 0.55s;
+   
+    /* padding: 0%; */
+
+    /* margin-bottom: 20px; */
+
+
+    
+}
+._inner li:hover{
+    color: white;
+    background-color:rgb(49,109,195) ;
+}
+
+.logotop_inner button{
+    display: none;
+}
+.logotop_inner img{
+    display: inline-block;
+    margin:0px 0% 0% 0%;
+    padding: 0%;
+    width: 100%;
+    height: 80%;
+
+    /* border: burlywood solid; */
+}
+
+#img_container{
+   width:100%;
+height: auto;
+   /* min-height: 200px; */
+   text-align: center;
+   /* border: black dotted; */
+   margin: 0px;
+   z-index: -2;
+   display: flex;
+   position: relative;
+   /* opacity: 0; */
+
+   
+   /* background-image: url("./img_mountains_wide.jpg"); */
+   /* background-size: auto; */
+   
+
+}
+[class^="slide_"],[class^="slide_"] img {
+    width: 100%;      /*this is back which are not display and it has effect on marquee margin */
+    height: auto;
+    margin:0px 0%;
+    text-align: center;
+    /* border: crimson dashed; */
+    position: relative;
+    left: -1500px;
+    z-index: -3;
+    opacity: 0; /*keeping all layers unseen as they are miss aline and i dont know how to hide backend layers slides*/
+    
+
+    
+}
+
+
+.display{
+    width: 100%; /*this is in side black doted container and with resepectto that it is absolute*/
+    height: auto;
+    margin: auto;
+    text-align: right;
+    /* border: rgb(117, 115, 116) dashed; */
+    position: absolute;
+    left: 0px;
+    top:-50px;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    opacity: 1;  /*when display so only see front one  */
+    
+    
+
+}
+.news_tickers{
+    background-color:white;
+    padding: 2px 2px;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 1%;
+    z-index: 4;
+    /* border: yellowgreen dashed; */
+    
+}
+.news_tickers marquee{
+    background-color:rgb(49,109,195);
+
+    margin: 20px 120px  ;
+    display: block;
+    color: white;
+    z-index: 4;
+}
+/* introduction */
+#introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 63%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+
+[class^="heading"]{
+    text-align: center;
+    color:green;
+    background-color: whitesmoke;
+    font-family:   'Lucida Grande';
+    font-size: 35px;
+    font-stretch: extra-condensed;
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+
+
+}
+[class^="heading"] span{
+    color:rgb(49,109,195);
+
+
+}
+[class^="heading"] img{
+    width: 50px;
+    margin: unset;
+
+
+}
+/* blue band */
+.blue_band{
+    text-align: center;
+    background-color:  rgb(39,85,233);
+}
+[class^="service_card"]{
+    /* border: black dotted; */
+    color: white;
+    width: 270px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+[class^="service_card"] img{
+    width: 40px;
+}
+[class^="service_card"] h3{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 3rem;
+    
+}
+[class^="service_card"] h5{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 16px;
+
+}
+[class^="service_card"] span{
+    text-align: center;
+    color:rgb(0,255,0);
+    margin-top: 0px;
+    font-size: 16px;
+    
+    
+
+    
+}
+/* white band */
+#what_we_do{
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+.white_band{
+    text-align: center;
+    /* border: black dashed; */
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: whitesmoke;
+
+}
+
+[class^="white_card"]{
+    width: 230PX;
+  
+    height: 100px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    margin-right:2%;
+    color:rgb(49,109,195);;
+    box-shadow:5px 5px 30px  gray;
+    padding: 3%;}
+[class^="white_card"] img{
+    width: 60px;
+}
+
+/* mission and events */
+.mission_events{
+    width: 100%;
+    display: flex;
+    /* border: black dashed; */
+    padding: 0% 0%;
+    margin: auto;
+    justify-content: space-evenly;
+    
+    /* text-align: center; */
+}
+.mission_events>div{
+    /* border: palegreen double; */
+    display: inline-block;
+    /* background-color: gold; */
+  
+    
+    
+}
+.mission{
+    width: 52%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0% 0% 0% 0%;
+    
+    justify-content: space-between;
+}
+/* .mission div{
+ 
+} */
+[class^="mission_card"]{
+    /* border: blue dotted; */
+    background-color:rgb(228, 232, 240);
+    opacity: 1;
+    display:inline-block;
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    padding: 0%;
+    text-align: left;
+ 
+    
+}
+[class^="mission_card"] span,[class^="mission_card"] img{
+    
+    /* border: fuchsia solid; */
+    z-index: 4;
+    margin-left: 16px;
+    margin-top: 10px;
+
+}
+[class^="mission_card"] span{
+    /* border: fuchsia solid; */
+    font-weight: bold;
+    color: rgb(49,109,195);
+    width: 60%;
+    margin-bottom: 20px;
+    position: relative;
+    top: -10px;
+}
+.mission h2{
+    text-align: left;
+    margin-left: 20px;
+
+    color: rgb(49,109,195);
+    font-size: 24px;
+
+}
+.events h2{
+    text-align: left;
+
+    color: rgb(49,109,195);
+    font-size: 24px;
+}
+.events{
+   display: inline-block;
+    width: 27%;
+    min-width:347px ;
+
+    height: 250px;
+    margin-left: 20px;
+    overflow: hidden;
+} 
+.events marquee{
+    width :250px;
+}
+.hr_heading{
+    width:12% ;
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border: 1.5px solid green;
+    
+}
+.mission hr{
+    
+    margin-left: 20px;
+    width:9%;
+    
+}
+    
+
+#gallary > *{
+    background-color: white;
+    
+}
+#gallary{
+    background-color: white;
+    /* border: violet dotted; */
+    margin-top: 2%;
+    padding-bottom: 6%;
+    text-align: center;
+}
+.image_gallary{
+    clear: both;
+    /* border: 3px gold solid; */
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-direction: row;
+
+
+    
+    flex-wrap: wrap;
+    margin: auto;
+    width: 82%;
+}
+.image_gallary img{
+    width:230px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+    justify-items: auto;
+    margin-top: 0px;
+
+    /* border: black dotted; */
+    color:white;
+    background-color: black;
+}
+
+.wrap3{
+    /* border: orange double; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 82%;
+    padding: 3%;
+    flex-wrap: wrap;
+
+}
+.wrap3>div{
+    /* border: white dashed; */
+    margin: 0%;
+    margin-left: 16px;
+
+    
+}
+.wrap3>div:nth-child(1){
+    padding-top: 50px;
+}
+.contact-list span{
+    margin-left: 5px;
+    /* border: firebrick solid; */
+}
+.contact-list{
+    list-style: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.wrap3>div:nth-child(2){
+    font-size: 17px;
+
+}
+.useful_line>hr{
+    margin-top: -20px;
+    color:darkgray;
+
+}
+
+/* .wrap3>div:nth-child(3){
+    font-size: 17px;
+} */
+
+.wrap3-1{
+    /* border: rgb(39,85,233) solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex:3;
+    
+}
+.bottom-social-link{
+    display: flex;
+    justify-content:flex-start;
+    /* border: darkgreen solid; */
+    padding: 0mm;
+    justify-items: center;
+    
+}
+
+.bottom-social-link li{
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    /* border: rgb(39,85,233) solid;
+    border-radius: 90px; */
+    /* padding: 5px;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px; */
+}
+.bottom-social-link i{
+    border: rgb(39,85,233) solid;
+    background-color: rgb(39,85,233);
+    border-radius: 100px;
+     padding: 10px;
+    /* width: 9px; */
+    /*height: 20px;
+    margin-left: 5px; */
+    margin-right: 5px;
+}
+.bottom-social-link li:nth-child(1)>i{
+    border: rgb(39,85,233) solid;
+    background-color: rgb(39,85,233);
+    border-radius: 100%;
+     padding: 10px  10px;
+     width: 16px; 
+    height: 16px;
+    margin-left: 5px; 
+}
+
+footer h5{
+    color:white;
+}
+footer div{
+    /* border: firebrick solid; */
+    /* margin: 0px 30px; */
+    color:lightgray;
+
+
+}
+footer h5{
+    color:white;
+    
+}
+.bottom-social-link li{
+    display: inline;
+}
+.bottom-bar>p{
+    margin-left: 7%;
+    
+}
+.bottom-bar{
+    display: block;
+    color:white;
+    background-color:rgb(49,109,195) ;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    
+}
+
+@media only screen and (max-width:1135px) {
+    nav [class$="_inner"]{
+        /* border: aqua solid; */
+        display: block;
+        color: black;
+        background-color: white;}
+    ._inner{
+            /* border: wheat dotted; */
+            width: 100%;
+            display: flex;
+            margin-top:10px ;
+            margin-bottom: 10px;
+            }
+     
+    nav{
+        display: block;
+    width: 90%;}
+
+
+
+}
+@media only screen and (max-width:1030px ){
+    .mission{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .events{
+        display: block;
+        margin-top: 20px;
+    }
+    .mission_events{
+        display: block;
+    }
+    [class^="mission_card"]{
+        /* border: blue dotted; */
+        display:inline-block;
+        width: 355px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 60px;
+        padding: 0%;
+        text-align: left;
+        background-color:rgb(228, 232, 240);
+     
+        
+    }
+    
+@media only screen and (max-width:900px){
+    
+    /* header [class$="_inner"]{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    
+    } */
+    .topbar div {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    
+    }
+    .social_media_link_inner ul{
+        text-align: center;
+        padding: 0%;
+    }
+    .topbutton_donation_inner ul{
+        text-align: center;
+        padding: 0%;
+    }
+
+    ._inner li{
+        margin: 10px;
+        display: none;
+        /* border: black dashed; */
+        padding: 0%;
+        text-align: center;
+        border-bottom: rgb(39,85,233) solid;
+        border-radius: 0mm;
+    }
+  
+   
+
+
+    
+    #button1{
+        /* border: khaki solid; */
+        display: inline-block; 
+         height: 100%;
+        width: 30%;
+        text-align: center;
+
+    
+    
+
+    }
+     .logotop_inner button{
+        
+            /* border: khaki solid; */   /*dropdown button*/
+            display: inline-block;
+            margin-right: 0%;  
+            padding: 0%;
+            height: 30px;
+            width: 30px;
+            border: none;
+            box-shadow: none;
+            background-image: url("./icons8-pull-down-96.png");
+            background-size: 100%;   
+            background-color: white;     
+    
+        
+    }
+    .logo_image{
+        /* border: cadetblue dashed; */
+        width:30%;
+    }
+    .logotop_inner img{
+        display:inline-block;
+        margin-left: 0%;
+        padding: 0%;
+        width: 100%;
+        
+        /* border:cornflowerblue dashed; */
+        
+    }
+
+    nav{
+        display: block;
+        margin: auto;
+        width: 82%;
+    }
+    nav>.logotop_inner{
+        
+        background-color:white;
+
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+   
+
+    ._inner{
+        display: block;
+        width: 100%;
+        background-color: blueviolet;
+        text-align: center;
+    }
+  
+    [class^="mission_card"]{
+        /* border: blue dotted; */
+        background-color: rgb(228, 232, 240);
+        display:inline-block;
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 60px;
+        padding: 0%;
+        text-align: left;
+     
+        
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .wrap3-1 > div{
+        /* display: block; */
+        width: 100%;
+    }
+    .contact-list li{
+        display: inline-block;
+        justify-content: space-between;
+        margin: 2% 7%;
+
+    }
+
+
+}
+

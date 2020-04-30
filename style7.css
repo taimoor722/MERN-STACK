@@ -1,0 +1,46 @@
+form{
+    margin:  auto ;
+    margin-top: 10%;
+    width: 20%;
+
+    
+
+}
+form input{
+    display: block;
+    margin-top: 10%;
+    width: 100%;
+}
+form input:nth-child(4){
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.black{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.white{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    
+}
+
+body{
+    background-color: lightblue;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    z-index: -1;
+}
+
