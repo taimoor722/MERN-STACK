@@ -206,6 +206,151 @@ nav>.logotop_inner{
     /* border: burlywood solid; */
 }
 
+/* sub list of about */
+
+.sub1{
+    display: none;
+    position: absolute;
+    /* border: black dotted; */
+    top:50px;
+    /* left:60px; */
+    background-color: white;
+    z-index: 10;
+    /* margin: -100px; */
+   
+    
+
+}
+.about:hover .sub1{
+  display: block;
+  color: black;
+  padding: unset;
+}
+.sub1 li{
+    display: block;
+    text-align: left;
+    margin: 0%;
+    border-bottom:1px black solid;
+    border-radius: 0%;
+;
+    
+}
+.sub1 ul{
+    padding-left: 0%;  /*for ul applied*/
+    padding: 0%;
+
+}
+
+
+
+/* sub list of saylani services */
+
+
+.sub2{
+    display: none;
+    position: absolute;
+    /* border: black dotted; */
+    top:50px;
+    background-color: white;
+    
+
+}
+.saylani-services:hover .sub2{
+  display: block;
+  color: black;
+}
+.sub2 li{
+    display: block;
+    text-align: left;
+    margin: 0%;
+    border-bottom:1px black solid;
+    border-radius: 0%;
+    
+}
+.sub2 ul{
+    padding-left: 0%;  /*for ul applied*/
+    padding: 0%;
+
+}
+
+/* sub list of future projects */
+.sub3{
+    display: none;
+    position: absolute;
+    /* border: black dotted; */
+    top:50px;
+    background-color: white;
+    
+
+}
+.future-projects:hover .sub3{
+  display: block;
+  color: black;
+}
+.sub3 li{
+    display: block;
+    text-align: left;
+    margin: 0%;
+    border-bottom:1px black solid;
+    border-radius: 0%;
+    
+}
+.sub3 ul{
+    padding-left: 0%;  /*for ul applied*/
+    padding: 0%;
+
+}
+
+
+
+
+
+
+
+
+/* sub list contact us */
+.sub4{
+    display: none;
+    position: absolute;
+    /* border: black dotted; */
+    top:50px;
+    right:10px;
+    background-color: white;
+    
+
+}
+.contact-us:hover .sub4{
+  display: block;
+  color: black;
+}
+.sub4 li{
+    display: block;
+    text-align: left;
+    margin: 0%;
+    border-bottom:1px black solid;
+    border-radius: 0%;
+    width: auto;
+    
+}
+.sub4 ul{
+    padding-left: 0%;  /*for ul applied*/
+    padding: 0%;
+    width: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #img_container{
    width:100%;
 height: auto;
@@ -675,8 +820,41 @@ footer h5{
     nav{
         display: block;
     width: 90%;}
+    ._inner>li{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    
+  
+    
+    /* .about:hover  .sub1{
+        display:block;
+        position: relative;
+        margin-top: -100px;
+        margin-left: -0px;
+        top: 120px; */
+        /* left: 50px; */
+    /* } */
+    /* .saylani-services:hover  .sub2{
+        display:inline-block;
+        position: relative;
+        margin-top: -100px;
+        top: 90px;
+    }
+    .future-projects:hover .sub3{
+        display:inline-block;
+        position: relative;
+        margin-top: -100px;
+        top: 90px;
+    }
 
+    .contact-us:hover .sub4{
 
+        display:inline-block;
+        position: relative;
+        margin-top: -100px;
+        top: 90px;
+    } */
 
 }
 @media only screen and (max-width:1030px ){
@@ -737,6 +915,15 @@ footer h5{
         border-bottom: rgb(39,85,233) solid;
         border-radius: 0mm;
     }
+
+    .about:hover .sub1{
+        position: relative;
+        top:0px;
+        margin-top: 0px;
+        display: block;
+        color: black;
+        padding: unset;
+      }
   
    
 
