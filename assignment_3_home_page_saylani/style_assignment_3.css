@@ -1,6 +1,4 @@
 
-
-
 body{
     font-size: 14px;
     font-family: sans-serif;
@@ -48,7 +46,7 @@ header li,nav li{
     text-align: center;
     padding: 0%;
     margin: 0px;
-   
+
 
 }
 .topbar{
@@ -127,7 +125,7 @@ display: inline-grid;
 /* now 2nd bar which is nav bar */
 nav{
     width: 82%;
-   /* border: 1px brown solid; */
+/* border: 1px brown solid; */
     margin: auto;
     position: sticky;
     top:0px;
@@ -156,7 +154,7 @@ nav [class$="_inner"]{
 
 }
 nav>.logotop_inner{
-   margin-left: 0%;
+margin-left: 0%;
     width: 18%;
 }
 
@@ -180,7 +178,7 @@ nav>.logotop_inner{
     font-weight: bold;
     padding: 4px 12px;
     transition: 0.55s;
-   
+
     /* padding: 0%; */
 
     /* margin-bottom: 20px; */
@@ -208,7 +206,7 @@ nav>.logotop_inner{
 
 /* sub list of about */
 
-.sub1{
+#sub1{
     display: none;
     position: absolute;
     /* border: black dotted; */
@@ -217,25 +215,25 @@ nav>.logotop_inner{
     background-color: white;
     z-index: 10;
     /* margin: -100px; */
-   
+
     
 
 }
-.about:hover .sub1{
-  display: block;
-  color: black;
-  padding: unset;
+.about:hover #sub1{
+display: block;
+color: black;
+padding: unset;
 }
-.sub1 li{
+#sub1 li{
     display: block;
     text-align: left;
     margin: 0%;
     border-bottom:1px black solid;
     border-radius: 0%;
-;
+
     
 }
-.sub1 ul{
+#sub1 ul{
     padding-left: 0%;  /*for ul applied*/
     padding: 0%;
 
@@ -252,12 +250,15 @@ nav>.logotop_inner{
     /* border: black dotted; */
     top:50px;
     background-color: white;
+    z-index: 10;
     
 
 }
 .saylani-services:hover .sub2{
-  display: block;
-  color: black;
+display: block;
+color: black;
+padding: unset;
+
 }
 .sub2 li{
     display: block;
@@ -284,8 +285,8 @@ nav>.logotop_inner{
 
 }
 .future-projects:hover .sub3{
-  display: block;
-  color: black;
+display: block;
+color: black;
 }
 .sub3 li{
     display: block;
@@ -320,8 +321,9 @@ nav>.logotop_inner{
 
 }
 .contact-us:hover .sub4{
-  display: block;
-  color: black;
+display: block;
+color: black;
+padding: unset;
 }
 .sub4 li{
     display: block;
@@ -335,7 +337,8 @@ nav>.logotop_inner{
 .sub4 ul{
     padding-left: 0%;  /*for ul applied*/
     padding: 0%;
-    width: auto;
+    
+    /* width: auto; */
 
 }
 
@@ -352,21 +355,21 @@ nav>.logotop_inner{
 
 
 #img_container{
-   width:100%;
+width:100%;
 height: auto;
-   /* min-height: 200px; */
-   text-align: center;
-   /* border: black dotted; */
-   margin: 0px;
-   z-index: -2;
-   display: flex;
-   position: relative;
-   /* opacity: 0; */
+/* min-height: 200px; */
+text-align: center;
+/* border: black dotted; */
+margin: 0px;
+z-index: -2;
+display: flex;
+position: relative;
+/* opacity: 0; */
 
-   
-   /* background-image: url("./img_mountains_wide.jpg"); */
-   /* background-size: auto; */
-   
+
+/* background-image: url("./img_mountains_wide.jpg"); */
+/* background-size: auto; */
+
 
 }
 [class^="slide_"],[class^="slide_"] img {
@@ -515,7 +518,7 @@ height: auto;
 
 [class^="white_card"]{
     width: 230PX;
-  
+
     height: 100px;
     margin-top: 0%;
     margin-bottom: 2%;
@@ -545,7 +548,7 @@ height: auto;
     /* border: palegreen double; */
     display: inline-block;
     /* background-color: gold; */
-  
+
     
     
 }
@@ -559,7 +562,7 @@ height: auto;
     justify-content: space-between;
 }
 /* .mission div{
- 
+
 } */
 [class^="mission_card"]{
     /* border: blue dotted; */
@@ -572,7 +575,7 @@ height: auto;
     height: 60px;
     padding: 0%;
     text-align: left;
- 
+
     
 }
 [class^="mission_card"] span,[class^="mission_card"] img{
@@ -607,7 +610,7 @@ height: auto;
     font-size: 24px;
 }
 .events{
-   display: inline-block;
+display: inline-block;
     width: 27%;
     min-width:347px ;
 
@@ -754,7 +757,7 @@ footer {
     border: rgb(39,85,233) solid;
     background-color: rgb(39,85,233);
     border-radius: 100px;
-     padding: 10px;
+    padding: 10px;
     /* width: 9px; */
     /*height: 20px;
     margin-left: 5px; */
@@ -764,8 +767,8 @@ footer {
     border: rgb(39,85,233) solid;
     background-color: rgb(39,85,233);
     border-radius: 100%;
-     padding: 10px  10px;
-     width: 16px; 
+    padding: 10px  10px;
+    width: 16px; 
     height: 16px;
     margin-left: 5px; 
 }
@@ -816,7 +819,7 @@ footer h5{
             margin-top:10px ;
             margin-bottom: 10px;
             }
-     
+    
     nav{
         display: block;
     width: 90%;}
@@ -825,7 +828,7 @@ footer h5{
         flex-direction: row;
     }
     
-  
+
     
     /* .about:hover  .sub1{
         display:block;
@@ -879,7 +882,7 @@ footer h5{
         padding: 0%;
         text-align: left;
         background-color:rgb(228, 232, 240);
-     
+    
         
     }
     
@@ -916,23 +919,16 @@ footer h5{
         border-radius: 0mm;
     }
 
-    .about:hover .sub1{
-        position: relative;
-        top:0px;
-        margin-top: 0px;
-        display: block;
-        color: black;
-        padding: unset;
-      }
-  
-   
+    
+
+
 
 
     
     #button1{
         /* border: khaki solid; */
         display: inline-block; 
-         height: 100%;
+        height: 100%;
         width: 30%;
         text-align: center;
 
@@ -940,7 +936,7 @@ footer h5{
     
 
     }
-     .logotop_inner button{
+    .logotop_inner button{
         
             /* border: khaki solid; */   /*dropdown button*/
             display: inline-block;
@@ -988,7 +984,7 @@ footer h5{
         align-items: center;
 
     }
-   
+
 
     ._inner{
         display: block;
@@ -996,7 +992,7 @@ footer h5{
         background-color: blueviolet;
         text-align: center;
     }
-  
+
     [class^="mission_card"]{
         /* border: blue dotted; */
         background-color: rgb(228, 232, 240);
@@ -1007,10 +1003,75 @@ footer h5{
         height: 60px;
         padding: 0%;
         text-align: left;
-     
+    
         
     }
+   .about:hover #sub1{
+    position: relative;
+    top:0px;
+    margin-top: 0px;
+    display: block;
+    color: black;
+    padding: 1%;
+    }
+   
+
+   
+    
+    .saylani-services:hover .sub2{
+        position: relative;
+        top:0px;
+        margin-top: 0px;
+        display: block;
+        color: black;
+        padding: 1%;
+    }
+    .future-projects:hover .sub3{
+        position: relative;
+        top:0px;
+        margin-top: 0px;
+        display: block;
+        color: black;
+        padding: 1%;
+    }
+    
+    .contact-us:hover .sub4{
+        position: relative;
+        top:0px;
+        right: 0px;
+        margin-top: 0px;
+        display: block;
+        color: black;
+        padding: 1%;
+    }
+
+    
+    #sub1 li,.sub2 li,.sub3 li,.sub4 li{
+        display: block;
+        margin: 0px;
+        position: unset;
+        position: relative;
+        left: 0;
+        top: 0;
+        color:rgb(49,109,195);
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        border:0.5px gray solid;
+        margin-top: 1px;
+
+
+        }
+        .sub4{
+            text-align: center;
+            margin: auto;
+        }
+
+
+
+
 }
+
 
 @media only screen and (max-width:800px) {
     .wrap3-1 > div{
@@ -1027,3 +1088,4 @@ footer h5{
 
 }
 
+}

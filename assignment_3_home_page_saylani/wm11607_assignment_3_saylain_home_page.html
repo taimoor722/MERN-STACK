@@ -46,15 +46,15 @@
                         <img src="saylani-logo.png">
                     </div>
                      <div id="button1">
-                         <button class="dropdown" type="button" onclick="display_inner()" ></button>
+                         <button class="dropdown" type="button" onclick="display_inner(document.getElementById('list'))" ></button>
                      </div>
                  </div>
                 <div   class="_inner" id="list">
                     <li> Home </li>
                     <!-- onmouseover="first_dropdown()" onmouseout="clear()" -->
-                    <li  class="about" > About <i class="fas fa-angle-down"></i>
+                    <li  class="about" onclick="display_inner(document.getElementById('sub1'))"> About <i class="fas fa-angle-down"></i>
                         
-                            <div class="sub1">
+                            <div id="sub1">
                             <ul class="first_dropdown" >
                                 <li>intorduction</li>
                                 <li>chairman message</li>
@@ -284,13 +284,13 @@
 
 <script>
     
-  
 
 
-    function display_inner(){
+    function display_inner(x){
     
-        var list=document.getElementById("list").children
-        if(document.getElementById("list").children[0].getAttribute("style")=="display:block;"){
+        // var list=document.getElementById("list").children
+        var list = x.children
+        if(list[0].getAttribute("style")=="display:block;"){
             for(i=0;i<list.length;i++){
             list[i].removeAttribute("style")
         }
